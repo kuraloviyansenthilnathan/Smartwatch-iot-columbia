@@ -37,6 +37,8 @@ A real-time IoT-based smartwatch system built using ESP8266, sensors, and cloud 
 
 ## Demo
 
-End-to-end demonstration of the IoT smartwatch system built with ESP8266, showing real-time sensor processing, SOS alert triggering, and cloud-based remote monitoring via REST APIs:
+End-to-end demonstration of the IoT smartwatch system built with ESP8266, showing real-time sensor processing, SOS alert triggering, and cloud-based remote monitoring via REST APIs.
+
+Click the thumbnail below to watch the full working demo of the Smartwatch IoT system:
 
 [![Watch Demo](https://img.youtube.com/vi/dCafMljHvvY/0.jpg)](https://www.youtube.com/watch?v=dCafMljHvvY)
