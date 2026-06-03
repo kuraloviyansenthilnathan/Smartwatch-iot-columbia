@@ -1,0 +1,34 @@
+LAB4 - SPI WRITE UP
+
+ACCELEROMETER WIRING:
+
+The following are the wire connections between the accelerometer and ESP8266:
+-------------------------
+| ESP8266   | ADXL345   |
+-------------------------
+| MISO      | SDA       |
+| MOSI      | SDO       |
+| SCK       | SCL       |
+| Pin2      | CS        |
+| GND       | GND       |
+| Vin       | 3V3       |
+-------------------------
+
+READ/WRITE DATA:
+
+ADXL345 has configuration registers that need to be initialized to specify 4-wire SPI communication, map interrupts,
+set interrupt enable, mention data format, control FIFO, clock polarity, accelerometer caliberation, etc. We use 
+SPI.write and SPI.readinto functions to write into the registers or read from registers and store values in buffers. 
+The 3-axes readings (for x, y and z) are read from registers 0x32 to 0x37. Each axis has a 2 byte value: x-axis information 
+is available on 0x32 and 0x33 and so on.
+
+The accelerometer is slave to the master device ESP8266 and the serial clock is given by the SCL to SCK wire connection. 
+SPI can have only one master but it can have multiple slave devices. We use an active low chip select line for device selection. 
+For this lab we have only one peripheral but the chip select can be used to manage multiple devices where required.
+
+SPI supports a full duplex interface. This means the master and slave can both transmit information simultaneously through the 
+MISO(master-in slave-out) and MOSI(master-out slave-in) lines.The serial clock edge synchronizes the shift of data into and from 
+the MISO/SDA and MOSI/SDO bus. The clock polarity can be set using configuration registers and we can use the rising or falling 
+edge to synchronize data according to the controller we use.
+
+On sofware, we read from 0x32 to 0x37 registers to read accelerometer values and use this data to scroll text on our OLED display.
