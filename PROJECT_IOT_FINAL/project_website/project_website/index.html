@@ -1,0 +1,471 @@
+<!DOCTYPE HTML>
+<!--
+	Prologue by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Columbia University EECS E4764 IoT Project Report 24</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Header -->
+			<div id="header">
+
+				<div class="top">
+
+					<!-- Logo -->
+						<div id="logo">
+							<!-- <span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span> -->
+							<h1 id="title">Smart Alarm Clock</h1>
+							<p>Columbia University <br>
+								EECS E4764 Fall'22 Internet of Things<br>
+								Intelligent and Connected Systems<br>
+								Team 24 Project Report
+							</p>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<!--
+
+								Prologue's nav expects links in one of two formats:
+
+								1. Hash link (scrolls to a different section within the page)
+
+								   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
+
+								2. Standard link (sends the user to another page/site)
+
+								   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
+
+							-->
+							<ul>
+								<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Abstract</span></a></li>
+								<li><a href="#motivation" id="motivation-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Motivation</span></a></li>
+								<li><a href="#system" id="system-link" class="skel-layers-ignoreHref"><span class="icon fa-th">System</span></a></li>
+								<li><a href="#results" id="results-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Results</span></a></li>
+								<li><a href="#references" id="references-link" class="skel-layers-ignoreHref"><span class="icon fa-th">References</span></a></li>
+								<li><a href="#team" id="team-link" class="skel-layers-ignoreHref"><span class="icon fa-user">Our Team</span></a></li>
+								<li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+				<div class="bottom">
+
+					<!-- Social Icons -->
+						<ul class="icons">
+							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+							<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+							<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+
+				</div>
+
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Intro -->
+					<section id="top" class="one dark cover">
+						<div class="container">
+
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/_AlcRoqS65E" frameborder="0" allowfullscreen></iframe>
+
+								<h2 class="alt">Smart Alarm Clock</h2>
+								<p>Our project is on building and programming an Internet of Things alarm clock. A smart alarm clock typically offers a myriad of features such as:</p>
+								<p>• Changing or adjusting the Alarm time automatically on the basis of Weather conditions, Traffic 
+									Routes and also on the basis of whether the day is a weekend or a weekday.</p>
+
+								<p>• In A Smart Alarm Clock, A pressure sensor is placed under the mattress and pillows 
+									that a person is using. This Sensor can measure your sleep and will also be 
+									able to determine whether the person is getting enough sleep or not. It can 
+									also recognize your sleep patterns and recommend any change if required.</p>
+
+								<p>• Another feature to be implemented would be for the person required to walk 
+									to another area of the apartment/house to find a Randomly generated code 
+									on the OLED display screen so that they can type that code in their phone to stop 
+									the alarm. This forces the person to wake up from their bed and walk around 
+									the apartment.</p>
+
+								<p>• It also allows you to set an alarm though multiple methods in the computer, text to speech synthesis and also provides a feature to
+									send a notification to your roommates if you have not woken up to the alarm for a period of time.
+								 </p>
+
+
+							<footer>
+								<a href="#motivation" class="button scrolly">Motivation</a>
+							</footer>
+
+						</div>
+					</section>
+
+				<!-- Portfolio -->
+					<section id="motivation" class="two">
+						<div class="container">
+
+							<header>
+								<h2>Motivation</h2>
+							</header>
+
+							<p align="left">Alarm clocks have been around for a long time because they solve a real problem: 
+								making sure we get up on time!</p>
+
+							<p align="left">They are vital to our living schedule and many of us would have great difficulties getting to 
+								class each day if we didn't have one. Even though most people use their phones as their 
+								primary alarm clocks, we believe there is still room for a smart alarm. </p>
+
+							<p align="left">The problem is that, in addition to the issue of space, you need something with a lot of 
+									features and that will work well in comparison to a conventional alarm.</p>
+
+							<p align="left">Smart alarm clocks are devices that do not use the boring standard methods of waking 
+									you up, and they are designed not to violently interrupt your sleeping cycle and put you in 
+									a groggy mood that can potentially last all day long. It can not only provide innovative 
+									ways for you to wake up, but also help improve your sleep schedule.</p>
+
+							<p align="left">A smart alarm clock typically offers a myriad of features which a conventional 
+								alarm/phone cannot.</p>
+								
+							<p align="left">The global smart alarm clock market is expected to grow at a CAGR of around 8.5% 
+									during the forecast period, from 2021 to 2030. The market is driven by factors such as 
+									increasing demand for smart alarm clocks in the travel industry and rising awareness 
+									about the benefits of using these devices.</p>
+
+
+
+						</div>
+					</section>
+
+
+					<section id="system" class="three">
+						<div class="container">
+
+							<header>
+								<h2>System</h2>
+							</header>
+
+							
+
+							<h3 align="left">Architecture</h3>
+
+							<p align="left">The Smart Alarm system will utilize:</p>
+
+							<p align="left">3 different ESP 8266 microchips and an Arduino UNO board to interface with various sensors and modules.</p>
+							<p align="left">Pressure Sensor/ Load cell: This sensor will fetch data while kept under the bed/pillow to detect sleep activity. This helps in tracking sleep time/schedule and recognizing sleep patterns. </p>
+							<p align="left">OLED module: This would display the randomly generated code. User then enters the code on the application to disable/end the alarm. </p>
+							<p align="left">AWS Cloud Server: A web application will be built to interface with the alarm system and its features related to sleep tracking, weather, traffic conditions etc. </p>
+							<p align="left">In addition, E-mail notifications would be sent to acquaintances if required by the user. </p>
+							<p align="left">Temperature and Humidity Sensor: This would fetch temperature and humidity values of the room and provide feedback in correlation with its impact on the user's sleep activity.</p>
+
+
+							<article class="item">
+								<a href="#" class="image fit"><img src="images/architecture.png" alt="" /></a>
+								<header>
+									
+								</header>
+							</article>
+
+
+							<h3 align="left">Technical Components</h3>
+
+							<p align="left">Alarm System:<br>
+
+								• Huzzah ESP 8266<br>
+								
+								• Piezo/Buzzer<br>
+								
+								• FeatherWing OLED Display<br>
+
+								• Red LED Light bulb<br>
+
+								• Smart Phone App<br>
+							</p>
+							<article class="item">
+								<a href="#" class="image fit"><img src="images/app1.png" alt="" /></a>
+								<header>
+									<h3>Smart Phone App to disable Alarm</h3>
+								</header>
+							</article>
+
+							<p align="left">
+								Random Code Generator System:<br>
+
+								•Huzzah ESP 8266<br>
+
+								•FeatherWing OLED Display<br>
+
+								
+							</p>
+
+							<p align="left">
+								Sleep Tracking System:<br>
+
+								• Arduino UNO board<br>
+
+								• Huzzah ESP 8266
+
+								• Load Cells<br>
+
+								• Huzzah ESP 8266<br>
+
+								• Temperature Sensor<br>
+
+								• Humidity Sensor<br>
+
+								
+
+							</p>
+
+							<article class="item">
+								<a href="#" class="image fit"><img src="images/server.png" alt="" /></a>
+								<header>
+									<h3>Amazon EC2 instance server</h3>
+								</header>
+							</article>
+
+							<p align="left">
+								Cloud Server:<br>
+
+								• AWS EC2 Server<br>
+
+								• SMTP2GO Server<br>
+								
+								• Flask RESTful API <br>
+								
+								• TomTom API<br>
+
+								• IP API<br>
+
+							</p>
+
+
+
+
+							<h3 align="left">Prototype</h3>
+
+							<p align="left">We can set the alarm manually by using the buttons on the OLED display or we can set it using the computer.<br>
+							The alarm has a red LED bulb for visual lighting effect and 2 Piezos for audio effect. The alarm system is built using the Huzzah ESP8266 microchip.
+							
+							</p>
+
+							<article class="item">
+								<a href="#" class="image fit"><img src="images/alarm.png" alt="" /></a>
+								<header>
+									
+								</header>
+							</article>
+
+							<p align="left">The Temeprature and Humidity sensor is also connected to another Huzzah ESP8266 microchip and it takes the readings of both the temperature and humidity 
+								of the room every 10 minutes to keep track of any slight changes. High humidity will increase the wakefulness of the user and reduce the amount of time the user spends in both slow-wave NREM and REM sleep. Since both of these stages are crucial for the user's overall health, sleepers may experience additional issues related to bodily recovery and memory consolidation.
+
+								
+								</p>
+
+							<article class="item">
+								<a href="#" class="image fit"><img src="images/temp_sensor.png" alt="" /></a>
+								<header>
+									
+								</header>
+							</article>
+
+
+							<p align="left">
+
+								The server generates a random code which is fetched by the code generator system through AWS server API. 
+
+
+							</p>
+
+							<article class="item">
+								<a href="#" class="image fit"><img src="images/random_num.png" alt="" /></a>
+								<header>
+									
+								</header>
+							</article>
+
+
+
+						</div>
+					</section>
+
+
+					<section id="results" class="two">
+						<div class="container">
+
+							<header>
+								<h2>Results</h2>
+							</header>
+
+							<article class="item">
+								<a href="#" class="image fit"><img src="images/features.png" alt="" /></a>
+								<header>
+									
+								</header>
+							</article>
+
+
+
+							<p align="left">We have completed all parts of our features list.<br>
+
+								The Alarm System Clock time, alarm time and date could be set manually by the user. Once the Alarm starts ringing,
+								 the user needs to send the Randomly generated code through the app to stop the alarm.
+								 
+								
+
+								<p align="left">All the systems interface and transfer data through the AWS EC2 Server.<br></p>
+								<p align="left">Incase the alarm is not deactivated by the user for more than 10 minutes, an E-mail is sent automatically to the recipients chosen by the user to notify them.<br> 
+								</p>
+
+								<p align="left">Load cells/Pressure sensors are placed under the pillow and mattress to detect whether the user is asleep and keep track of his sleep activity on a day to day basis.<br>
+								</p>
+
+								<p align="left">We have also incorporated IP API, Flask RESTful API, TomTom API in order to adjust the alarm time automatically on the basis of weather conditions, traffic routes and whether it is a weekend or a weekday.<br></p>
+
+								<p align="left">Our web portal also shows us our sleep activity, temperature and humidity on a day to day basis to help us understand and keep track of our sleep schedule.</p>
+	</p>
+								
+							<article class="item">
+								<a href="#" class="image fit"><img src="images/sleep1.png" alt="" /></a>
+								<header>
+									
+								</header>
+							</article>
+							<article class="item">
+								<a href="#" class="image fit"><img src="images/sleep2.png" alt="" /></a>
+								<header>
+									
+								</header>
+							</article>
+
+
+						</div>
+					</section>
+
+					<section id="references" class="three">
+						<div class="container">
+
+							<header>
+								<h2>References</h2>
+							</header>
+
+							<p align="left">Blah blah blah</p>
+
+						</div>
+					</section>
+
+
+				<!-- About Me -->
+					<section id="team" class="two">
+						<div class="container">
+
+							<header>
+								<h2>Our Team</h2>
+							</header>
+
+							<!-- <a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a> -->
+
+
+							<div class="row">
+								<div class="4u 12u$(mobile)">
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
+										<header>
+											<h3>Eashan Sapre</h3>
+											<p>Description and link</p>
+										</header>
+									</article>
+								</div>
+								<div class="4u 12u$(mobile)">
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
+										<header>
+											<h3>Kuraloviyan Senthilnathan</h3>
+											<p>Description and link</p>
+										</header>
+									</article>
+								</div>
+								<div class="4u$ 12u$(mobile)">
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
+										<header>
+											<h3>Aparna Muraleekrishnan</h3>
+											<p>Description and link</p>
+										</header>
+									</article>
+								</div>
+							</div>
+
+						</div>
+					</section>
+
+				<!-- Contact -->
+					<section id="contact" class="four">
+						<div class="container">
+
+							<header>
+								<h2>Contact</h2>
+							</header>
+
+							<p align="left">
+								<strong>Eashan Sapre: </strong>es4069@columbia.edu</br>
+								<strong>Kuraloviyan Senthilnathan: </strong>ks4065@columbia.edu</br>
+								<strong>Aparna Muraleekrishnan: </strong>am5964@columbia.edu</br>
+							</br>
+								<strong>Columbia University </strong><a href="http://www.ee.columbia.edu">Department of Electrical Engineering</a><br>
+								<!-- <strong>Class Website:</strong>
+									<a href="https://edblogs.columbia.edu/eecs4764-001-2019-3/">Columbia University EECS E4764 Fall '22 IoT</a></br> -->
+								<strong>Instructor:</strong> <a href="http://fredjiang.com/">Professsor Xiaofan (Fred) Jiang</a>
+							</p>
+
+
+							<!-- <form method="post" action="#">
+								<div class="row">
+									<div class="6u 12u$(mobile)"><input type="text" name="name" placeholder="Name" /></div>
+									<div class="6u$ 12u$(mobile)"><input type="text" name="email" placeholder="Email" /></div>
+									<div class="12u$">
+										<textarea name="message" placeholder="Message"></textarea>
+									</div>
+									<div class="12u$">
+										<input type="submit" value="Send Message" />
+									</div>
+								</div>
+							</form> -->
+
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<div id="footer">
+
+				<!-- Copyright -->
+					<ul class="copyright">
+						<li>&copy; IoT Project | All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollzer.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
